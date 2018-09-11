@@ -1,4 +1,4 @@
-# my-reading-list-NLP
+# Waterbro's Reading List on Natural Language Processing
 
 
 ### Character-level Convolutional Networks for Text Classification, NIPS, 2016
