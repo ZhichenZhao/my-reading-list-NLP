@@ -11,3 +11,12 @@
 ### Efficient Estimation of Word Representations in Vector Space，ICLR，2013
 * word2vec的第一篇文章，这里面的核心idea是如何让词与词之间有关系，什么样的次在embedding空间应该离得近？这篇文章的角度是同一句话中，上下文的词在空间中应该离得近。
 * 做法是训练两个输出，一个输出的任务是用context词语预测center词语，另一个是用center词语预测context，都是分类任务。
+
+### GloVe: Global Vectors for Word Representation，EMNLP，2014
+* 用优化的方法解决word embedding在空间中语义上相近的空间中也近。通过对共生矩阵的一系列推导来得出优化目标。
+* 优点是训练很快，而且和语料库的大小也无关。
+* 常见的evaluate方法是计算比如a is to b like c is to ？看看word vector里面是不是a-b+c=d。
+
+
+
+
