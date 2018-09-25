@@ -17,6 +17,8 @@
 * 优点是训练很快，而且和语料库的大小也无关。
 * 常见的evaluate方法是计算比如a is to b like c is to ？看看word vector里面是不是a-b+c=d。
 
-
+### Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation，EMNLP，2014
+* 提出GRU，gated recurrent unit的文章，它的实现比lstm要简单。
+* lstm和gru在大多数场景下性能是差不多的，在long term上也都比普通rnn要好。不过当问题变得复杂的时候lstm会好一点。
 
 
