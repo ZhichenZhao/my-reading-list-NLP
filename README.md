@@ -26,3 +26,6 @@
 * 这算是text上的一种趋势，用其他东西来替代无法并行的RNN。
 * 也有一些缺点，比如号称不用CNN，但很多地方都有意无意的借鉴CNN的结构，文章口气过大。point wise这个其实就是1x1卷积，却故意不说出来。
 * [一个很好的博客](https://kexue.fm/archives/4765)
+
+### Convolutional Neural Networks for Sentence Classification, EMNLP, 2014
+* 用CNN来做文本分类，就像上面说的，CNN的优点是可以无代价的考虑到全局的信息，这个CNN的结构非常简单，就一两层，但是也能达到很好的分类效果。前面的word embedding起到了很重要的作用。
