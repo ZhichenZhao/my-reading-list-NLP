@@ -21,7 +21,7 @@
 * 提出GRU，gated recurrent unit的文章，它的实现比lstm要简单。
 * lstm和gru在大多数场景下性能是差不多的，在long term上也都比普通rnn要好。不过当问题变得复杂的时候lstm会好一点。
 
-### Attention is All You Need, NIPS, 2015
+### Attention is All You Need, NIPS, 2017
 * 在机器翻译的任务中，尽量不以CNN或RNN为工具，提出transformer的架构，讲attention做了一个很好的推广。RNN有一个缺点是无法并行，所以计算会比较慢，并利用编码位置信息来解决attention无法感知位置信息的问题。
 * 这算是text上的一种趋势，用其他东西来替代无法并行的RNN。
 * 也有一些缺点，比如号称不用CNN，但很多地方都有意无意的借鉴CNN的结构，文章口气过大。point wise这个其实就是1x1卷积，却故意不说出来。
@@ -29,3 +29,15 @@
 
 ### Convolutional Neural Networks for Sentence Classification, EMNLP, 2014
 * 用CNN来做文本分类，就像上面说的，CNN的优点是可以无代价的考虑到全局的信息，这个CNN的结构非常简单，就一两层，但是也能达到很好的分类效果。前面的word embedding起到了很重要的作用。
+
+
+### BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding，arXiv，2018
+* 这个模型中，比较重要的是形成representation模型的两个与训练任务，一个是遮住15%的词汇，用全部context预测遮住的词是什么，另一个是分成前后两句话，判断这两句话是不是连贯的。
+* bert算是一个多任务上都能很好work的basemodel，在之前的NLP领域貌似还比较缺乏。
+
+
+
+
+
+
+
